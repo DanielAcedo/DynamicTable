@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DynamicTable</string>
+    <string name ="txv_Id">Id</string>
+    <string name ="txv_Name">Name</string>
+    <string-array name="listName">
+        <item>Daniel Acedo</item>
+        <item>María García</item>
+        <item>Laura Durán</item>
+        <item>Medinilla</item>
+        <item>Casielles</item>
+        <item>Antonio López</item>
+        <item>Juan Borromeo</item>
+    </string-array>
+</resources>
