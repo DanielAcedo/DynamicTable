@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -50,11 +51,12 @@ public class DynamicTable_Activity extends AppCompatActivity {
     private void createHeader(){
         TableRow tbr_Header = new TableRow(this);
         tbr_Header.setLayoutParams(tbrLayoutHeader);
-        tbr_Header.setPadding(5, 5, 5, 5);
+        tbr_Header.setPadding(5, 5, 5, 5); //Add some padding
         TextView txv_Id = new TextView(this);
         txv_Id.setText(R.string.txv_Id);
         txv_Id.setLayoutParams(tbrLayoutId);
-        txv_Id.setBackgroundResource(R.drawable.shape_header);
+        txv_Id.setGravity(Gravity.CENTER_HORIZONTAL); //Center the TextView
+        txv_Id.setBackgroundResource(R.drawable.shape_header); //Assign the custom shape to each cell
         tbr_Header.addView(txv_Id);
 
         TextView txv_Name = new TextView(this);
@@ -83,6 +85,7 @@ public class DynamicTable_Activity extends AppCompatActivity {
             txv_Id = new TextView(this);
             txv_Id.setText(String.valueOf(i+1));
             txv_Id.setLayoutParams(tbrLayoutId);
+            txv_Id.setGravity(Gravity.CENTER_HORIZONTAL); //Center the TextView
             txv_Id.setBackgroundResource(R.drawable.shape_body);
             tbr_Body.addView(txv_Id);
 
