@@ -69,7 +69,7 @@ public class DynamicTable_Activity extends AppCompatActivity {
 
     /**
      * @author Daniel Acedo Calderón
-     * Creates the body of the layout, creating and adding rows for each entry in an string array
+     * Creates the body of the layout, creating and adding rows for each entry of an string array
      */
     private void createBody(){
         TableRow tbr_Body;
