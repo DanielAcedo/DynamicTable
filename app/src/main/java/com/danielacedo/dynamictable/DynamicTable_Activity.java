@@ -75,7 +75,6 @@ public class DynamicTable_Activity extends AppCompatActivity {
         TableRow tbr_Body;
         TextView txv_Id;
         TextView txv_Name;
-        int id = 0;
         String[] names = getResources().getStringArray(R.array.listName);
 
         for(int i = 0; i<names.length; i++){
